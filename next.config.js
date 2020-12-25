@@ -3,16 +3,16 @@
 // (But you could use ES2015 features supported by your Node.js version)
 
 const debug = process.env.NODE_ENV !== "production";
-
+const path = require('path')
 module.exports = {
   exportPathMap: function () {
     return {
       "/": { page: "/" },
-      "/about": { page: "/about" },
+      "/about": { page: "/about" }
     }
   },
   //assetPrefix: '',
-  assetPrefix: !debug ? '/Next-gh-page-example/' : '',
+  assetPrefix: !debug ? '/next-gh-page-example/' : '',
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');
@@ -25,6 +25,8 @@ module.exports = {
     })
     // Important: return the modified config
     return config
+  },sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   }/*,
   webpackDevMiddleware: (config) => {
     // Perform customizations to webpack dev middleware config

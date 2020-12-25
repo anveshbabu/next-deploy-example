@@ -2,7 +2,7 @@
 
 This repository is a gh-pages example built with Next.js
 
-https://thierryc.github.io/Next-gh-page-example/
+https://anveshbabu.github.io/next-gh-page-example/
 
 Install it and run:
 
@@ -22,7 +22,8 @@ Edit ```next.config.js``` and replace ```'Next-gh-page-example'``` by your proje
 3. Publish your master branch.
 
 ```bash
-npm run deploy
+npm run build
+npm run export
 ```
 
 Test it:

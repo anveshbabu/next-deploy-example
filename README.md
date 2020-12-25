@@ -59,7 +59,7 @@ Example:
 
 https://github.com/thierryc/Next-gh-page-example/
 
-https://thierryc.github.io/Next-gh-page-example/
+https://anveshbabu.github.io/next-gh-page-example/
 
 ```
 
